@@ -1,14 +1,35 @@
-output "time" {
-  value = {
-    time              = local.time
-    iso8601           = local.iso8601
-    rfc850            = local.rfc850
-    rfc2822           = local.rfc2822
-    rfc1123           = local.rfc1123
-    rfc3339           = local.rfc3339
-    cron_year         = local.cron_year
-    cron_event_bridge = local.cron_event_bridge
-    cron              = local.cron
-    unix              = local.unix
-  }
+output "iso8601" {
+  value = local.iso8601
+}
+
+output "rfc850" {
+  value = local.rfc850
+}
+
+output "rfc2822" {
+  value = local.rfc2822
+}
+
+output "rfc1123" {
+  value = local.rfc1123
+}
+
+output "rfc3339" {
+  value = local.rfc3339
+}
+
+output "cron_year" {
+  value = local.cron_year
+}
+
+output "cron_event_bridge" {
+  value = local.cron_event_bridge
+}
+
+output "cron" {
+  value = local.cron
+}
+
+output "unix" {
+  value = local.unix
 }

@@ -13,7 +13,7 @@
  *   value = module.time_converter
  * }
  * ```
- *
+ * outputs:
  * ```
  * time_converter = {
  *   "time" = {
@@ -25,6 +25,7 @@
  *     "rfc3339" = "2022-11-22T21:00:00Z"
  *     "rfc850" = "22 Nov 2022 21:00 UTC"
  *     "time" = "2022-11-22T21:00:00Z"
+ *     "unix" = 1669150800
  *   }
  * }
  * ```

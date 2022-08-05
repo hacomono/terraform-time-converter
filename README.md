@@ -1,4 +1,4 @@
-# terraform-module-template
+# terraform-time-converter
 
 このリポジトリは時間とTimezoneを指定して実行すると望んだTimezoneで様々な形式で返してくれるModuleです。
 

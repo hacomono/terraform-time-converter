@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1](https://github.com/hacomono/terraform-time-converter/compare/v1.2.0...v1.2.1) (2022-08-05)
+
+
+### Bug Fixes
+
+* 時間の「+」と「-」を反転し忘れていた ([195c1c4](https://github.com/hacomono/terraform-time-converter/commit/195c1c4b9792b53e8ebca16a3749d274aba677ce))
+
 # [1.2.0](https://github.com/hacomono/terraform-time-converter/compare/v1.1.0...v1.2.0) (2022-08-05)
 
 

@@ -1,4 +1,4 @@
-# terraform-module-template
+# terraform-time-converter
 
 このリポジトリは時間とTimezoneを指定して実行すると望んだTimezoneで様々な形式で返してくれるModuleです。
 
@@ -34,7 +34,7 @@ output "time_converter" {
   value = module.time_converter
 }
 ```
-
+outputs:
 ```
 time_converter = {
   "time" = {
@@ -46,6 +46,7 @@ time_converter = {
     "rfc3339" = "2022-11-22T21:00:00Z"
     "rfc850" = "22 Nov 2022 21:00 UTC"
     "time" = "2022-11-22T21:00:00Z"
+    "unix" = 1669150800
   }
 }
 ```
@@ -59,7 +60,9 @@ time_converter = {
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_time"></a> [time](#provider\_time) | 0.7.2 |
 
 ## Modules
 
@@ -67,7 +70,9 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [time_static.static](https://registry.terraform.io/providers/hashicorp/time/latest/docs/resources/static) | resource |
 
 ## Inputs
 

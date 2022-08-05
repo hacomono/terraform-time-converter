@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.2](https://github.com/hacomono/terraform-time-converter/compare/v1.2.1...v1.2.2) (2022-08-05)
+
+
+### Bug Fixes
+
+* aws providerは不要なので削除 ([f07cc42](https://github.com/hacomono/terraform-time-converter/commit/f07cc4295052d74502cb7a0f9a47c0884809bac4))
+
 ## [1.2.1](https://github.com/hacomono/terraform-time-converter/compare/v1.2.0...v1.2.1) (2022-08-05)
 
 

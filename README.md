@@ -37,17 +37,15 @@ output "time_converter" {
 outputs:
 ```
 time_converter = {
-  "time" = {
-    "cron" = "0 21 22 11 *"
-    "cron_year" = "0 21 22 11 * 2022"
-    "iso8601" = "2022-11-22T21:00:00+09:00"
-    "rfc1123" = "Tue, 22 Nov 2022 21:00:00 UTC"
-    "rfc2822" = "22 Nov 2022 21:00 UTC"
-    "rfc3339" = "2022-11-22T21:00:00Z"
-    "rfc850" = "22 Nov 2022 21:00 UTC"
-    "time" = "2022-11-22T21:00:00Z"
-    "unix" = 1669150800
-  }
+  "cron" = "0 21 22 11 *"
+  "cron_event_bridge" = "0 21 22 11 ? 2022"
+  "cron_year" = "0 21 22 11 * 2022"
+  "iso8601" = "2022-11-22T21:00:00+09:00"
+  "rfc1123" = "Tue, 22 Nov 2022 21:00:00 UTC"
+  "rfc2822" = "22 Nov 2022 21:00 UTC"
+  "rfc3339" = "2022-11-22T21:00:00Z"
+  "rfc850" = "22 Nov 2022 21:00 UTC"
+  "unix" = 1669150800
 }
 ```
 
@@ -85,5 +83,13 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_time"></a> [time](#output\_time) | n/a |
+| <a name="output_cron"></a> [cron](#output\_cron) | n/a |
+| <a name="output_cron_event_bridge"></a> [cron\_event\_bridge](#output\_cron\_event\_bridge) | n/a |
+| <a name="output_cron_year"></a> [cron\_year](#output\_cron\_year) | n/a |
+| <a name="output_iso8601"></a> [iso8601](#output\_iso8601) | n/a |
+| <a name="output_rfc1123"></a> [rfc1123](#output\_rfc1123) | n/a |
+| <a name="output_rfc2822"></a> [rfc2822](#output\_rfc2822) | n/a |
+| <a name="output_rfc3339"></a> [rfc3339](#output\_rfc3339) | n/a |
+| <a name="output_rfc850"></a> [rfc850](#output\_rfc850) | n/a |
+| <a name="output_unix"></a> [unix](#output\_unix) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

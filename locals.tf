@@ -1,7 +1,7 @@
 locals {
   now = timestamp()
 
-  time = timeadd("${replace(var.datetime, " ", "T")}Z", "${local.timezones[var.timezone].diff}h")
+  time = timeadd("${replace(var.datetime, " ", "T")}Z", "${0 - local.timezones[var.timezone].diff}h")
 
   iso8601           = formatdate("YYYY-MM-DD'T'hh:mm:ss${local.timezones[var.timezone].iso8601_ZZZZZ}", local.time)
   rfc850            = formatdate("DD MMM YYYY hh:mm ZZZ", local.time)

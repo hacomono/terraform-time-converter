@@ -74,7 +74,7 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_datetime"></a> [datetime](#input\_datetime) | n/a | `string` | n/a | yes |
-| <a name="input_timezone"></a> [timezone](#input\_timezone) | n/a | `string` | `"America/Caracas"` | no |
+| <a name="input_timezone"></a> [timezone](#input\_timezone) | n/a | `string` | `"UTC"` | no |
 
 ## Outputs
 

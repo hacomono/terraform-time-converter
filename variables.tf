@@ -4,5 +4,5 @@ variable "datetime" {
 
 variable "timezone" {
   type    = string
-  default = "America/Caracas"
+  default = "UTC"
 }

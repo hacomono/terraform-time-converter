@@ -60,7 +60,7 @@ time_converter = {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_time"></a> [time](#provider\_time) | 0.9.1 |
+| <a name="provider_time"></a> [time](#provider\_time) | 0.7.2 |
 
 ## Modules
 
@@ -85,6 +85,9 @@ No modules.
 |------|-------------|
 | <a name="output_cron"></a> [cron](#output\_cron) | n/a |
 | <a name="output_cron_event_bridge"></a> [cron\_event\_bridge](#output\_cron\_event\_bridge) | n/a |
+| <a name="output_cron_timezone"></a> [cron\_timezone](#output\_cron\_timezone) | n/a |
+| <a name="output_cron_timezone_event_bridge"></a> [cron\_timezone\_event\_bridge](#output\_cron\_timezone\_event\_bridge) | n/a |
+| <a name="output_cron_timezone_year"></a> [cron\_timezone\_year](#output\_cron\_timezone\_year) | n/a |
 | <a name="output_cron_year"></a> [cron\_year](#output\_cron\_year) | n/a |
 | <a name="output_iso8601"></a> [iso8601](#output\_iso8601) | n/a |
 | <a name="output_no_symbol"></a> [no\_symbol](#output\_no\_symbol) | n/a |

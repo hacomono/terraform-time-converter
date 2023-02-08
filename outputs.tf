@@ -33,3 +33,7 @@ output "cron" {
 output "unix" {
   value = local.unix
 }
+
+output "no_symbol" {
+  value = local.no_symbol
+}

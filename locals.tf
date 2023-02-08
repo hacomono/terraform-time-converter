@@ -12,6 +12,7 @@ locals {
   cron_event_bridge = formatdate("m h D M ? YYYY", local.time)
   cron              = formatdate("m h D M *", local.time)
   unix              = time_static.static.unix
+  no_symbol         = replace(replace(replace(var.datetime, " ", ""), "-", ""), ":", "")
 
   timezones = {
     "Africa/Johannesburg" = {

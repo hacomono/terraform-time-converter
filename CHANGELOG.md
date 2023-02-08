@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.3.0](https://github.com/hacomono/terraform-time-converter/compare/v1.2.2...v1.3.0) (2023-02-08)
+
+
+### Features
+
+* add no symbol number ([ab4adf8](https://github.com/hacomono/terraform-time-converter/commit/ab4adf841dff8b8defa6e2261e7e335b0645154b))
+
 ## [1.2.2](https://github.com/hacomono/terraform-time-converter/compare/v1.2.1...v1.2.2) (2022-08-05)
 
 

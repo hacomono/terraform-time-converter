@@ -37,3 +37,15 @@ output "unix" {
 output "no_symbol" {
   value = local.no_symbol
 }
+
+output "cron_timezone_year" {
+  value = local.cron_timezone_year
+}
+
+output "cron_timezone_event_bridge" {
+  value = local.cron_timezone_event_bridge
+}
+
+output "cron_timezone" {
+  value = local.cron_timezone
+}

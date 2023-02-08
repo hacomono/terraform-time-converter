@@ -37,16 +37,17 @@ output "time_converter" {
 outputs:
 ```
 time_converter = {
-  "cron" = "0 21 22 11 *"
-  "cron_event_bridge" = "0 21 22 11 ? 2022"
-  "cron_year" = "0 21 22 11 * 2022"
-  "iso8601" = "2022-11-22T21:00:00+09:00"
-  "rfc1123" = "Tue, 22 Nov 2022 21:00:00 UTC"
-  "rfc2822" = "22 Nov 2022 21:00 UTC"
-  "rfc3339" = "2022-11-22T21:00:00Z"
-  "rfc850" = "22 Nov 2022 21:00 UTC"
-  "unix" = 1669150800
-}
+  "cron" = "0 3 22 11 *"
+  "cron_event_bridge" = "0 3 22 11 ? 2022"
+  "cron_year" = "0 3 22 11 * 2022"
+  "iso8601" = "2022-11-22T03:00:00+09:00"
+  "no_symbol" = "20221122120000"
+  "rfc1123" = "Tue, 22 Nov 2022 03:00:00 UTC"
+  "rfc2822" = "22 Nov 2022 03:00 UTC"
+  "rfc3339" = "2022-11-22T03:00:00Z"
+  "rfc850" = "22 Nov 2022 03:00 UTC"
+  "unix" = 1669086000
+} *
 ```
 
 ## Requirements
@@ -86,6 +87,7 @@ No modules.
 | <a name="output_cron_event_bridge"></a> [cron\_event\_bridge](#output\_cron\_event\_bridge) | n/a |
 | <a name="output_cron_year"></a> [cron\_year](#output\_cron\_year) | n/a |
 | <a name="output_iso8601"></a> [iso8601](#output\_iso8601) | n/a |
+| <a name="output_no_symbol"></a> [no\_symbol](#output\_no\_symbol) | n/a |
 | <a name="output_rfc1123"></a> [rfc1123](#output\_rfc1123) | n/a |
 | <a name="output_rfc2822"></a> [rfc2822](#output\_rfc2822) | n/a |
 | <a name="output_rfc3339"></a> [rfc3339](#output\_rfc3339) | n/a |

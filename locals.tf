@@ -22,8 +22,8 @@ locals {
   utc_cron_event_bridge = formatdate("m h D M ? YYYY", local.time)
   utc_cron              = formatdate("m h D M *", local.time)
   utc_no_symbol         = replace(replace(replace(replace(replace(local.time, " ", ""), "-", ""), ":", ""), "T", ""), "Z", "")
-  unix                  = time_static.static.unix
 
+  unix = time_static.static.unix
 
   timezones = {
     "Africa/Johannesburg" = {

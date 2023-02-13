@@ -60,7 +60,7 @@ time_converter = {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_time"></a> [time](#provider\_time) | 0.9.1 |
+| <a name="provider_time"></a> [time](#provider\_time) | 0.7.2 |
 
 ## Modules
 
@@ -83,23 +83,23 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_cron"></a> [cron](#output\_cron) | n/a |
-| <a name="output_cron_event_bridge"></a> [cron\_event\_bridge](#output\_cron\_event\_bridge) | n/a |
-| <a name="output_cron_year"></a> [cron\_year](#output\_cron\_year) | n/a |
-| <a name="output_iso8601"></a> [iso8601](#output\_iso8601) | n/a |
-| <a name="output_no_symbol"></a> [no\_symbol](#output\_no\_symbol) | n/a |
-| <a name="output_rfc1123"></a> [rfc1123](#output\_rfc1123) | n/a |
-| <a name="output_rfc2822"></a> [rfc2822](#output\_rfc2822) | n/a |
-| <a name="output_rfc3339"></a> [rfc3339](#output\_rfc3339) | n/a |
-| <a name="output_rfc850"></a> [rfc850](#output\_rfc850) | n/a |
-| <a name="output_unix"></a> [unix](#output\_unix) | n/a |
-| <a name="output_utc_cron"></a> [utc\_cron](#output\_utc\_cron) | n/a |
-| <a name="output_utc_cron_event_bridge"></a> [utc\_cron\_event\_bridge](#output\_utc\_cron\_event\_bridge) | n/a |
-| <a name="output_utc_cron_year"></a> [utc\_cron\_year](#output\_utc\_cron\_year) | n/a |
-| <a name="output_utc_iso8601"></a> [utc\_iso8601](#output\_utc\_iso8601) | n/a |
-| <a name="output_utc_no_symbol"></a> [utc\_no\_symbol](#output\_utc\_no\_symbol) | n/a |
-| <a name="output_utc_rfc1123"></a> [utc\_rfc1123](#output\_utc\_rfc1123) | n/a |
-| <a name="output_utc_rfc2822"></a> [utc\_rfc2822](#output\_utc\_rfc2822) | n/a |
-| <a name="output_utc_rfc3339"></a> [utc\_rfc3339](#output\_utc\_rfc3339) | n/a |
-| <a name="output_utc_rfc850"></a> [utc\_rfc850](#output\_utc\_rfc850) | n/a |
+| <a name="output_cron"></a> [cron](#output\_cron) | example: 0 12 22 11 * |
+| <a name="output_cron_event_bridge"></a> [cron\_event\_bridge](#output\_cron\_event\_bridge) | example: 0 12 22 11 ? 2022 |
+| <a name="output_cron_year"></a> [cron\_year](#output\_cron\_year) | example: 0 12 22 11 * 2022 |
+| <a name="output_iso8601"></a> [iso8601](#output\_iso8601) | example: 2022-11-22T12:00:00+09:00 |
+| <a name="output_no_symbol"></a> [no\_symbol](#output\_no\_symbol) | example: 20221122120000 |
+| <a name="output_rfc1123"></a> [rfc1123](#output\_rfc1123) | example: Tue, 22 Nov 2022 12:00:00 +0900 |
+| <a name="output_rfc2822"></a> [rfc2822](#output\_rfc2822) | example: 22 Nov 2022 12:00 +0900 |
+| <a name="output_rfc3339"></a> [rfc3339](#output\_rfc3339) | example: 2022-11-22T12:00:00+09:00 |
+| <a name="output_rfc850"></a> [rfc850](#output\_rfc850) | example: 22 Nov 2022 12:00 +0900 |
+| <a name="output_unix"></a> [unix](#output\_unix) | example: 1669086000 |
+| <a name="output_utc_cron"></a> [utc\_cron](#output\_utc\_cron) | example: 0 3 22 11 * |
+| <a name="output_utc_cron_event_bridge"></a> [utc\_cron\_event\_bridge](#output\_utc\_cron\_event\_bridge) | example: 0 3 22 11 ? 2022 |
+| <a name="output_utc_cron_year"></a> [utc\_cron\_year](#output\_utc\_cron\_year) | example: 0 3 22 11 * 2022 |
+| <a name="output_utc_iso8601"></a> [utc\_iso8601](#output\_utc\_iso8601) | example: 2022-11-22T03:00:00Z |
+| <a name="output_utc_no_symbol"></a> [utc\_no\_symbol](#output\_utc\_no\_symbol) | example: 20221122030000 |
+| <a name="output_utc_rfc1123"></a> [utc\_rfc1123](#output\_utc\_rfc1123) | example: Tue, 22 Nov 2022 03:00:00 UTC |
+| <a name="output_utc_rfc2822"></a> [utc\_rfc2822](#output\_utc\_rfc2822) | example: 22 Nov 2022 03:00 UTC |
+| <a name="output_utc_rfc3339"></a> [utc\_rfc3339](#output\_utc\_rfc3339) | example: 2022-11-22T03:00:00+00:00 |
+| <a name="output_utc_rfc850"></a> [utc\_rfc850](#output\_utc\_rfc850) | example: 22 Nov 2022 03:00 UTC |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

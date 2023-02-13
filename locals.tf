@@ -3,19 +3,27 @@ locals {
 
   time = timeadd("${replace(var.datetime, " ", "T")}Z", "${0 - local.timezones[var.timezone].diff}h")
 
-  iso8601                    = formatdate("YYYY-MM-DD'T'hh:mm:ss${local.timezones[var.timezone].iso8601_ZZZZZ}", local.time)
-  rfc850                     = formatdate("DD MMM YYYY hh:mm ZZZ", local.time)
-  rfc2822                    = formatdate("DD MMM YYYY hh:mm ZZZ", local.time)
-  rfc1123                    = formatdate("EEE, DD MMM YYYY hh:mm:ss ZZZ", local.time)
-  rfc3339                    = formatdate("YYYY-MM-DD'T'hh:mm:ssZ", local.time)
-  cron_year                  = formatdate("m h D M * YYYY", local.time)
-  cron_event_bridge          = formatdate("m h D M ? YYYY", local.time)
-  cron                       = formatdate("m h D M *", local.time)
-  cron_timezone_year         = formatdate("m h D M * YYYY", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
-  cron_timezone_event_bridge = formatdate("m h D M ? YYYY", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
-  cron_timezone              = formatdate("m h D M *", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
-  unix                       = time_static.static.unix
-  no_symbol                  = replace(replace(replace(var.datetime, " ", ""), "-", ""), ":", "")
+  iso8601           = formatdate("YYYY-MM-DD'T'hh:mm:ss${local.timezones[var.timezone].iso8601_ZZZZZ}", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  rfc850            = formatdate("DD MMM YYYY hh:mm ${replace(local.timezones[var.timezone].iso8601_ZZZZZ, ":", "")}", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  rfc2822           = formatdate("DD MMM YYYY hh:mm ${replace(local.timezones[var.timezone].iso8601_ZZZZZ, ":", "")}", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  rfc1123           = formatdate("EEE, DD MMM YYYY hh:mm:ss ${replace(local.timezones[var.timezone].iso8601_ZZZZZ, ":", "")}", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  rfc3339           = formatdate("YYYY-MM-DD'T'hh:mm:ss${local.timezones[var.timezone].iso8601_ZZZZZ}", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  cron_year         = formatdate("m h D M * YYYY", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  cron_event_bridge = formatdate("m h D M ? YYYY", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  cron              = formatdate("m h D M *", timeadd(local.time, "${local.timezones[var.timezone].diff}h"))
+  no_symbol         = replace(replace(replace(var.datetime, " ", ""), "-", ""), ":", "")
+
+  utc_iso8601           = formatdate("YYYY-MM-DD'T'hh:mm:ssZ", local.time)
+  utc_rfc850            = formatdate("DD MMM YYYY hh:mm ZZZ", local.time)
+  utc_rfc2822           = formatdate("DD MMM YYYY hh:mm ZZZ", local.time)
+  utc_rfc1123           = formatdate("EEE, DD MMM YYYY hh:mm:ss ZZZ", local.time)
+  utc_rfc3339           = formatdate("YYYY-MM-DD'T'hh:mm:ssZZZZZ", local.time)
+  utc_cron_year         = formatdate("m h D M * YYYY", local.time)
+  utc_cron_event_bridge = formatdate("m h D M ? YYYY", local.time)
+  utc_cron              = formatdate("m h D M *", local.time)
+  utc_no_symbol         = replace(replace(replace(replace(replace(local.time, " ", ""), "-", ""), ":", ""), "T", ""), "Z", "")
+
+  unix = time_static.static.unix
 
   timezones = {
     "Africa/Johannesburg" = {

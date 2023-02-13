@@ -60,7 +60,7 @@ time_converter = {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_time"></a> [time](#provider\_time) | 0.9.1 |
+| <a name="provider_time"></a> [time](#provider\_time) | 0.7.2 |
 
 ## Modules
 
@@ -85,9 +85,6 @@ No modules.
 |------|-------------|
 | <a name="output_cron"></a> [cron](#output\_cron) | n/a |
 | <a name="output_cron_event_bridge"></a> [cron\_event\_bridge](#output\_cron\_event\_bridge) | n/a |
-| <a name="output_cron_timezone"></a> [cron\_timezone](#output\_cron\_timezone) | n/a |
-| <a name="output_cron_timezone_event_bridge"></a> [cron\_timezone\_event\_bridge](#output\_cron\_timezone\_event\_bridge) | n/a |
-| <a name="output_cron_timezone_year"></a> [cron\_timezone\_year](#output\_cron\_timezone\_year) | n/a |
 | <a name="output_cron_year"></a> [cron\_year](#output\_cron\_year) | n/a |
 | <a name="output_iso8601"></a> [iso8601](#output\_iso8601) | n/a |
 | <a name="output_no_symbol"></a> [no\_symbol](#output\_no\_symbol) | n/a |
@@ -96,4 +93,13 @@ No modules.
 | <a name="output_rfc3339"></a> [rfc3339](#output\_rfc3339) | n/a |
 | <a name="output_rfc850"></a> [rfc850](#output\_rfc850) | n/a |
 | <a name="output_unix"></a> [unix](#output\_unix) | n/a |
+| <a name="output_utc_cron"></a> [utc\_cron](#output\_utc\_cron) | n/a |
+| <a name="output_utc_cron_event_bridge"></a> [utc\_cron\_event\_bridge](#output\_utc\_cron\_event\_bridge) | n/a |
+| <a name="output_utc_cron_year"></a> [utc\_cron\_year](#output\_utc\_cron\_year) | n/a |
+| <a name="output_utc_iso8601"></a> [utc\_iso8601](#output\_utc\_iso8601) | n/a |
+| <a name="output_utc_no_symbol"></a> [utc\_no\_symbol](#output\_utc\_no\_symbol) | n/a |
+| <a name="output_utc_rfc1123"></a> [utc\_rfc1123](#output\_utc\_rfc1123) | n/a |
+| <a name="output_utc_rfc2822"></a> [utc\_rfc2822](#output\_utc\_rfc2822) | n/a |
+| <a name="output_utc_rfc3339"></a> [utc\_rfc3339](#output\_utc\_rfc3339) | n/a |
+| <a name="output_utc_rfc850"></a> [utc\_rfc850](#output\_utc\_rfc850) | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

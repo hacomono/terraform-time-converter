@@ -38,14 +38,38 @@ output "no_symbol" {
   value = local.no_symbol
 }
 
-output "cron_timezone_year" {
-  value = local.cron_timezone_year
+output "utc_iso8601" {
+  value = local.utc_iso8601
 }
 
-output "cron_timezone_event_bridge" {
-  value = local.cron_timezone_event_bridge
+output "utc_rfc850" {
+  value = local.utc_rfc850
 }
 
-output "cron_timezone" {
-  value = local.cron_timezone
+output "utc_rfc2822" {
+  value = local.utc_rfc2822
+}
+
+output "utc_rfc1123" {
+  value = local.utc_rfc1123
+}
+
+output "utc_rfc3339" {
+  value = local.utc_rfc3339
+}
+
+output "utc_cron_year" {
+  value = local.utc_cron_year
+}
+
+output "utc_cron_event_bridge" {
+  value = local.utc_cron_event_bridge
+}
+
+output "utc_cron" {
+  value = local.utc_cron
+}
+
+output "utc_no_symbol" {
+  value = local.utc_no_symbol
 }
